@@ -5,3 +5,11 @@ title: "Draw Your Lines"
 module:
   imports:
     - path: github.com/theNewDynamic/gohugo-theme-ananke/v2
+
+
+menu:
+  main:
+    - name: Posts
+      url: /posts/
+      weight: 10
+
