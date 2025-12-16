@@ -25,3 +25,6 @@ params:
   recent_posts_number: 5
   custom_css:
     - "css/custom.css"
+  images:
+    - "og.png"
+  favicon: "favicon.png"

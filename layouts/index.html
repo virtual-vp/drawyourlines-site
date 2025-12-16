@@ -6,6 +6,17 @@
   <title>{{ .Site.Title }}</title>
   <meta name="description" content="{{ .Description }}">
 
+  {{/* Favicon */}}
+  <link rel="icon" href="/favicon.png" type="image/png">
+
+  {{/* Open Graph */}}
+  <meta property="og:title" content="{{ .Site.Title }}">
+  <meta property="og:description" content="{{ .Description }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}og.png">
+  <meta property="og:url" content="{{ .Site.BaseURL }}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
   {{/* Tachyons CSS (from Ananke) */}}
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
 
