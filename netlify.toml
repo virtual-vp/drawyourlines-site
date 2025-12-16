@@ -12,3 +12,34 @@
   HUGO_VERSION = "0.152.2"
   HUGO_ENV = "production"
   GO_VERSION = "1.22"
+
+# Canonical domain redirects (301)
+[[redirects]]
+  from = "https://draw-your-lines.netlify.app/*"
+  to = "https://drawyourlines.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://draw-your-lines.netlify.app/*"
+  to = "https://drawyourlines.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.drawyourlines.com/*"
+  to = "https://drawyourlines.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.drawyourlines.com/*"
+  to = "https://drawyourlines.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://drawyourlines.com/*"
+  to = "https://drawyourlines.com/:splat"
+  status = 301
+  force = true
