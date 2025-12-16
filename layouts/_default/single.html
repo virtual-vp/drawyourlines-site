@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{/* Page header - compact, not full-screen */}}
+<header class="dyl-page-header pv4 ph3">
+  <div class="mw7 center">
+    <h1 class="dyl-page-title f2 fw7 mb2 lh-title">{{ .Title }}</h1>
+    {{ if .Date }}
+    <p class="dyl-page-meta f6 ma0">{{ .Date.Format "January 2, 2006" }}</p>
+    {{ end }}
+  </div>
+</header>
+
+{{/* Page content */}}
+<article class="dyl-page-content pv4 ph3">
+  <div class="mw7 center">
+    <div class="dyl-body f4 lh-copy measure-wide">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

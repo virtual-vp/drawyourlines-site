@@ -103,6 +103,98 @@
   color: var(--dyl-gray-500);
 }
 
+/* ===== Page Header (single pages & lists) ===== */
+
+.dyl-page-header {
+  background: linear-gradient(180deg, var(--dyl-gray-100) 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--dyl-gray-200);
+}
+
+.dyl-page-title {
+  color: var(--dyl-gray-900);
+  letter-spacing: -0.02em;
+  margin-top: 0;
+}
+
+.dyl-page-meta {
+  color: var(--dyl-gray-500);
+}
+
+/* ===== Page Content ===== */
+
+.dyl-page-content {
+  background-color: #ffffff;
+}
+
+.dyl-page-content .dyl-body {
+  color: var(--dyl-gray-700);
+}
+
+.dyl-page-content .dyl-body h2 {
+  color: var(--dyl-gray-900);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.dyl-page-content .dyl-body h3 {
+  color: var(--dyl-gray-900);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.dyl-page-content .dyl-body p {
+  margin-bottom: 1.25rem;
+}
+
+.dyl-page-content .dyl-body ul,
+.dyl-page-content .dyl-body ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.dyl-page-content .dyl-body li {
+  margin-bottom: 0.5rem;
+}
+
+.dyl-page-content .dyl-body a {
+  color: var(--dyl-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dyl-page-content .dyl-body a:hover {
+  text-decoration: underline;
+}
+
+.dyl-page-content .dyl-body strong {
+  color: var(--dyl-gray-900);
+  font-weight: 600;
+}
+
+/* ===== List Page ===== */
+
+.dyl-list {
+  background-color: #ffffff;
+}
+
+.dyl-list-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.dyl-list-link {
+  color: var(--dyl-gray-900);
+}
+
+.dyl-list-link:hover h2 {
+  color: var(--dyl-blue);
+}
+
+.dyl-list-link h2 {
+  transition: color 0.15s ease;
+}
+
 /* ===== Responsive ===== */
 
 @media screen and (max-width: 30em) {

@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{/* Section header - compact */}}
+<header class="dyl-page-header pv4 ph3">
+  <div class="mw7 center">
+    <h1 class="dyl-page-title f2 fw7 mb2 lh-title">{{ .Title | default .Section | title }}</h1>
+    {{ with .Description }}
+    <p class="dyl-page-meta f5 mid-gray ma0">{{ . }}</p>
+    {{ end }}
+  </div>
+</header>
+
+{{/* Post listing */}}
+<section class="dyl-list pv4 ph3">
+  <div class="mw7 center">
+    {{ $pages := .Pages }}
+    {{ if eq .Kind "home" }}
+      {{ $pages = .Site.RegularPages }}
+    {{ end }}
+
+    {{ if $pages }}
+    <ul class="list pl0">
+      {{ range $pages }}
+      <li class="dyl-list-item mb4 pb4 bb b--light-gray">
+        <a href="{{ .Permalink }}" class="dyl-list-link link">
+          <h2 class="f4 fw6 mb2 lh-title">{{ .Title }}</h2>
+        </a>
+        <p class="f6 mid-gray mb2">{{ .Date.Format "January 2, 2006" }}</p>
+        {{ with .Summary }}
+        <p class="f5 lh-copy gray mt0">{{ . | truncate 150 }}</p>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+    {{ else }}
+    <p class="f5 mid-gray">No posts yet.</p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
