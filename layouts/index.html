@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Description }}">
+
+  {{/* Tachyons CSS (from Ananke) */}}
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+
+  {{/* Custom CSS */}}
+  <link rel="stylesheet" href="/css/custom.css">
+
+  {{/* System fonts */}}
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white">
+
+  {{/* Navigation */}}
+  <header class="dyl-nav">
+    <nav class="flex justify-between items-center mw8 center ph3 pv3">
+      <a href="{{ .Site.BaseURL }}" class="dyl-nav-brand link b f4">
+        {{ .Site.Title }}
+      </a>
+      <div class="dyl-nav-links f5">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="link dib ml3 ml4-l">{{ .Name }}</a>
+        {{ end }}
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    {{/* Hero section */}}
+    <section class="dyl-hero pv5 ph3">
+      <div class="mw7 center tc">
+        <h1 class="dyl-title f1 fw7 mb3 lh-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="dyl-tagline f4 fw4 measure center lh-copy mt0 mb0">{{ . }}</p>
+        {{ end }}
+      </div>
+    </section>
+
+    {{/* Content section */}}
+    <section class="dyl-content pv5 ph3">
+      <div class="mw6 center">
+        <div class="dyl-body f4 lh-copy">
+          {{ .Content }}
+        </div>
+      </div>
+    </section>
+
+    {{/* Accent bar */}}
+    <section class="dyl-accent pv4 ph3 tc">
+      <p class="f5 ma0">Experience over hype. Signal over noise.</p>
+    </section>
+  </main>
+
+  {{/* Footer */}}
+  <footer class="dyl-footer pv4 ph3">
+    <div class="mw8 center tc">
+      <p class="f6 ma0">&copy; {{ now.Year }} {{ .Site.Title }}</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -20,3 +20,8 @@ menu:
     - name: About
       url: /about/
       weight: 40
+
+params:
+  recent_posts_number: 5
+  custom_css:
+    - "css/custom.css"

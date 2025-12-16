@@ -1,7 +1,12 @@
 ---
-date: '2025-12-14T19:53:24-08:00'
-draft: true
-title: ‘Draw Your Lines'
+title: "Draw Your Lines"
+description: "Practical lessons from the field. No vendor marketing. No fluff."
 ---
 
-Welcome. This is the homepage.
+This is where I share what I've learned building and running cloud systems — what works, what doesn't, and what "good enough" quietly breaks later.
+
+**[Start Here](/start-here/)** — what this site is and how to navigate
+
+**[The Line](/posts/the-line/)** — the idea behind the site
+
+**[Now](/now/)** — what I'm working through right now

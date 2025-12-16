@@ -1,0 +1,138 @@
+/* Draw Your Lines - Custom Styles */
+/* Clean, professional design with subtle color palette */
+
+:root {
+  --dyl-navy: #1e3a5f;
+  --dyl-slate: #334155;
+  --dyl-blue: #2563eb;
+  --dyl-blue-light: #3b82f6;
+  --dyl-gray-100: #f8fafc;
+  --dyl-gray-200: #e2e8f0;
+  --dyl-gray-500: #64748b;
+  --dyl-gray-700: #334155;
+  --dyl-gray-900: #0f172a;
+}
+
+/* ===== Navigation ===== */
+
+.dyl-nav {
+  background-color: var(--dyl-navy);
+  border-bottom: 3px solid var(--dyl-blue);
+}
+
+.dyl-nav-brand {
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.dyl-nav-brand:hover {
+  color: var(--dyl-gray-200);
+}
+
+.dyl-nav-links a {
+  color: var(--dyl-gray-200);
+  transition: color 0.15s ease;
+}
+
+.dyl-nav-links a:hover {
+  color: #ffffff;
+}
+
+/* ===== Hero Section ===== */
+
+.dyl-hero {
+  background: linear-gradient(180deg, var(--dyl-gray-100) 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--dyl-gray-200);
+}
+
+.dyl-title {
+  color: var(--dyl-gray-900);
+  font-size: 2.75rem;
+  letter-spacing: -0.025em;
+  margin-top: 0;
+}
+
+.dyl-tagline {
+  color: var(--dyl-gray-500);
+  font-size: 1.25rem;
+}
+
+/* ===== Content Section ===== */
+
+.dyl-content {
+  background-color: #ffffff;
+}
+
+.dyl-body {
+  color: var(--dyl-gray-700);
+}
+
+.dyl-body p {
+  margin-bottom: 1.5rem;
+}
+
+.dyl-body p:first-child {
+  font-size: 1.125rem;
+  color: var(--dyl-gray-900);
+  margin-bottom: 2rem;
+}
+
+.dyl-body a {
+  color: var(--dyl-blue);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.dyl-body a:hover {
+  color: var(--dyl-blue-light);
+  text-decoration: underline;
+}
+
+/* ===== Accent Bar ===== */
+
+.dyl-accent {
+  background-color: var(--dyl-slate);
+  color: var(--dyl-gray-200);
+}
+
+/* ===== Footer ===== */
+
+.dyl-footer {
+  background-color: var(--dyl-gray-900);
+  color: var(--dyl-gray-500);
+}
+
+/* ===== Responsive ===== */
+
+@media screen and (max-width: 30em) {
+  .dyl-title {
+    font-size: 2rem;
+  }
+
+  .dyl-tagline {
+    font-size: 1rem;
+  }
+
+  .dyl-nav nav {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .dyl-nav-links {
+    margin-top: 0.75rem;
+  }
+
+  .dyl-nav-links a {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .dyl-title {
+    font-size: 3.5rem;
+  }
+}
